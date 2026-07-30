@@ -221,29 +221,7 @@ round(862/(862+137),2)
 
 round(229/(229+179),2)
 
-!echo "# DeeplearningMOOD" >> README.md
-!git init
-!git add README.md
-!git commit -m "first commit"
-!git branch -M main
-!git remote add origin https://github.com/viveksingh2155/DeeplearningMOOD.git
-!git push -u origin main
 
-"""### Resolving Git Remote and Authentication Issues
-
-Given the errors you encountered, let's ensure the remote origin is correctly set and then attempt to push with proper authentication. Please be ready to enter your GitHub Personal Access Token (PAT) when prompted for a password during the `git push` step.
-"""
-
-# Check if 'origin' remote exists. If it does, remove it to avoid 'remote origin already exists' error.
-!git remote -v
-!git remote remove origin
-
-# Now, add the remote origin. Replace `YOUR_USERNAME` and `YOUR_REPOSITORY_NAME` with your actual GitHub details.
-# Note: This is using the same URL as before, assuming it's correct for your repository.
-!git remote add origin https://github.com/viveksingh2155/DeeplearningMOOD.git
-
-# Verify the remote is added
-!git remote -v
 
 # Push your changes to GitHub. When prompted for 'Password', enter your Personal Access Token (PAT).
 !git push -u origin main
